@@ -1,6 +1,7 @@
 package com.developer.yrgo.siniom;
 
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
@@ -35,6 +36,7 @@ public class Guesser {
      * rules() method, next the doGuesses() method.
      */
     public void start(){
+
         rules();
         doGuesses();
     }
@@ -58,10 +60,11 @@ public class Guesser {
      * the player.
      */
     private String getReply(){
-        String reply = System.console().readLine();
-        while (reply != "T" || reply != "F") {
+        Scanner scan = ScannerSingleton.getScanner();
+        String reply = scan.nextLine();
+        while (!(reply.equals("T") || reply.equals("F"))) {
             System.out.println("Please answer T or F");
-            reply = System.console().readLine();
+            reply = scan.nextLine();
         }
         return reply;
     }
