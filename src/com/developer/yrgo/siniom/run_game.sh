@@ -1,0 +1,6 @@
+NAME="RIEMERTZON_SIMON"
+SUFFIX="labb"
+DIRPATH="${NAME}_${SUFFIX}/"
+echo $NAME
+mkdir $DIRPATH
+
