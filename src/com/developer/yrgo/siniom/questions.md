@@ -1,4 +1,4 @@
-# Svar på frågor
+# Svar på frågor - Jag satsar på VG
 
 ## När använder man add respektive commit
 
