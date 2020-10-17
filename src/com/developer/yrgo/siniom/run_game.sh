@@ -1,6 +1,12 @@
 NAME="RIEMERTZON_SIMON"
-SUFFIX="labb"
-DIRPATH="${NAME}_${SUFFIX}/"
+SUFFIX="_labb"
+DIRPATH=$NAME$SUFFIX
 echo $NAME
 mkdir $DIRPATH
+cp *.java $DIRPATH
+cd $DIRPATH
+echo -n "Running game from: "
+pwd
+
+
 
