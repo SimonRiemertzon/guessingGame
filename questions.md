@@ -20,4 +20,17 @@
 
 ## Hur kan man formulera sig i sina commit meddelanden
 
-Jag använder mig av meningen "This commit will" och sedan skriver jag mitt meddelande. Jag försöker också följa praxis som beskrivs i denna [blogg](https://chris.beams.io/posts/git-commit/).
+Jag använder mig av inlednings-meningen "This commit will" i huvudet. Sedan skriver jag mitt meddelande.
+Ett exempel skulle vara "This commit will:" <"Add lines to gitignore"> (Det är bara raden med <> som kommer med).
+Jag försöker också följa praxis som beskrivs i denna [blogg](https://chris.beams.io/posts/git-commit/).
+
+## VG FRÅGOR: Rulla tillbaka koden till tidigare tillstånd
+
+* git reset HEAD: Vi tar tillbaka de ändringar vi lagt till i staging area.
+ Alla ändringarna i själva filerna är kvar. Det här skulle vi kunna använda för att ta bort alla filer ifrån staging area, 
+ i ett svep.  
+* git reset --hard: Allting rullar tillbaka till tidigare commit. Eventuellt tar det bort ändringar och filer som du skulle
+ vilja ha kvar. Detta kan vara värdefullt när vi vet att vi vill kasta absolut allting sedan senaste commit. 
+* git stash: Spara undan lokala ändringar för eventuellt återanvända dem senare.
+
+
