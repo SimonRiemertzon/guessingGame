@@ -27,10 +27,9 @@ Jag försöker också följa praxis som beskrivs i denna [blogg](https://chris.b
 ## VG FRÅGOR: Rulla tillbaka koden till tidigare tillstånd
 
 * git reset HEAD: Vi tar tillbaka de ändringar vi lagt till i staging area.
- Alla ändringarna i själva filerna är kvar. Det här skulle vi kunna använda för att ta bort alla filer ifrån staging area, 
+ Alla ändringarna i själva filerna är kvar. Det här skulle vi kunna använda för att ta bort alla filer ifrån staging area,
  i ett svep.  
 * git reset --hard: Allting rullar tillbaka till tidigare commit. Eventuellt tar det bort ändringar och filer som du skulle
- vilja ha kvar. Detta kan vara värdefullt när vi vet att vi vill kasta absolut allting sedan senaste commit. 
+ vilja ha kvar. Detta kan vara värdefullt när vi vet att vi vill kasta absolut allting sedan senaste commit.
 * git stash: Spara undan lokala ändringar för eventuellt återanvända dem senare.
-
-
+* git revert: En "undo" action som inverterar de commitade raderna. Lägger den till en fil, tar den bort den filen.
