@@ -1,3 +1,4 @@
+!#/bin/bash
 NAME="Riemertzon_Simon"
 SUFFIX="_labb"
 RUNFOLDER=$NAME$SUFFIX
